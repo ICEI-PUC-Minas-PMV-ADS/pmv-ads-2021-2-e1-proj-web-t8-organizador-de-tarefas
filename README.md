@@ -35,7 +35,7 @@ qualidade e otimização em seus projetos pessoais e profissionais.
 
 ## Orientador
 
-* Nome completo do professor 1
+* WILL RICARDO DOS SANTOS MACHADO
 
 ## Instruções de utilização
 
