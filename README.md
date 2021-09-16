@@ -6,7 +6,22 @@ Disciplina: Web Front End
 
 1 Semestre
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto a ser executado, tem como objetivo geral a criação de uma aplicação Web
+com foco em gestão de tempo.
+A ferramenta colaborativa e de fácil utilização, tem como objetivo específico suprir a
+carência que aplicativos já existentes no mercado apresentam em oferecer
+funcionalidades e auxiliar usuários/alunos em organizar trabalhos e estudos na
+rotina diária.
+
+Por exemplo:
+* Na faculdade, um Feed de suas matérias/trabalhos; atividades avaliativas e
+provas;
+
+* No trabalho, coordenação de reuniões; projetos a serem priorizados e
+organizar metas.
+
+Portanto, ao utilizar essa plataforma, o aluno terá facilidade em sua rotina, dando
+qualidade e otimização em seus projetos pessoais e profissionais. 
 
 ## Integrantes
 
