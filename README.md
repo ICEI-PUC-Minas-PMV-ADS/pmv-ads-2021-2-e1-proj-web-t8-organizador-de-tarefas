@@ -1,19 +1,22 @@
-# TÍTULO DO PROJETO
+# Organizador De tarefas
 
-`CURSO`
+Curso: Analise e Desinvolvimento de Software
 
-`DISCIPLINA`
+Disciplina: Web Front End 
 
-`SEMESTRE`
+1 Semestre
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Kaique Rocha 
+* Arthur Duarte 
+* Eduarda Mereciano
+* Isabella Fernanda 
+* Leticia Amorim
+* Lucas Silveira 
+* Gustavo Ribeiro
 
 ## Orientador
 
