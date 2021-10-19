@@ -1,91 +1,65 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+As definições abordadas neste projeto foram estabelecidas com a participação dos usuários por meio de pesquisas em grupos de faculdades. Então, a partir das observações e experiências dos usuários foram obtidos os resultados abordados nesse processo que foi consolidado na forma de Personas e Histórias de Usuários. 
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+As personas levantadas durante o processo de entendimento do problema são apresentadas nas Figuras que se seguem. 
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+![image](https://user-images.githubusercontent.com/90807404/135282763-083b6672-a495-40b4-98c3-455e32146322.png)
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+![image](https://user-images.githubusercontent.com/90807404/135282790-f13b892f-14b1-4e78-9574-a6d0a00ad835.png)
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+A partir das personas identificadas para o projeto, foram registradas as seguintes histórias de usuários. 
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+| EU COMO... `PERSONA`|     QUERO/PRECISO ... `FUNCIONALIDADE`               |      PARA ... `MOTIVO/VALOR`               |
+|---------------------|------------------------------------------------------|--------------------------------------------|
+| Fernanda Coura      | Colocar nível de prioridade nas minhas tarefas.      | Priorizar e finalizar tarefas essenciais.  |
+| Ian Rodrigues       | Receber lembretes sobre  as tarefas.                 | Não se esquecer de realizar nenhuma tarefa.|
+| Ian Rodrigues       | Identificar meus horários livres na semana.          | Conseguir realizar atividades físicas de meu interesse, como corrida e futebol.|
+| Fernanda Coura      | Ver as matérias que faltam ou não foram estudadas.   | Controlar e direcionar meus estudos.|
+| Ian Rodrigues       | Ter atualização dos status das minhas tarefas (não feitas, em andamento, concluídas).| Ter controle das tarefas concluídas e melhorar o desempenho.|
+| Fernanda Coura      | Ter acesso ao site no desktop e no celular.          | Adicionar, excluir ou editar tarefas facilmente.|
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+O escopo funcional do projeto é definido por meio dos requisitos funcionais que descrevem as possibilidades de interação dos usuários, bem como os requisitos não funcionais que descrevem os aspectos que a aplicação Web deverá apresentar de maneira geral. Estes requisitos são apresentados a seguir.
 
 ### Requisitos Funcionais
 
+A seguir, são apresentados em tabela, os requisitos funcionais do projeto, destacando suas respectivas prioridades. 
+
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
-
+|RF-001| O site deve ter na primeira página um formulário para o usuário cadastrar e fazer login.| ALTA | 
+|RF-002| O site deve ter um calendário.   | ALTA |
+|RF-003| O site deve permitir que o usuário adicione, edite e exclua suas tarefas. | ALTA | 
+|RF-004| O site deve mostrar todas as tarefas que o usuário adicionou. | ALTA | 
+|RF-005| O site deve permitir a alteração do status das tarefas (não iniciadas, em andamento, concluídas). | ALTA | 
+|RF-006| O site deve possuir avisos em formato pop-up. | BAIXA | 
+|RF-007| O site deve enviar lembretes sobre as tarefas ao usuário. | MÉDIA| 
+|RF-008| O site deve permitir que o usuário crie tarefas colaborativas. | BAIXA |
 
 ### Requisitos não Funcionais
 
+A tabela a seguir, apresenta os requisitos não funcionais que o projeto deverá seguir.
+
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|RNF-001| O site deve ser publicado em um ambiente acessível publicamente na Internet (Repl.it, GitHub Pages, Heroku).| ALTA | 
+|RNF-002| O site deve ter design responsivo permitindo a visualização em um celular de forma adequada. | ALTA | 
+|RNF-003| O site deve ter bom nível de contraste entre os elementos da tela em conformidade. | MÉDIA | 
+|RNF-004| O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge). | ALTA | 
+|RNF-005| O site deve ter carregamento rápido. | MÉDIA | 
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+As questões que limitam a execução desse projeto e que se configuram como obrigações claras para o desenvolvimento do projeto em questão são apresentadas na tabela a seguir. 
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|ID   | Restrição                                             |
+|--   |-------------------------------------------------------|
+|RE-01| O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 29/11/2021 |
+|RE-02| O aplicativo deve se restringir às tecnologias básicas da Web no Front-end.        |
+|RE-03| A equipe não pode subcontratar o desenvolvimento do trabalho. |
