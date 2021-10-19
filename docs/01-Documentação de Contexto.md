@@ -1,6 +1,6 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+A cada dia que passa, o tempo se torna mais crucial para nossa vida, seja nas atividades físicas; dança; trabalho ou até em tarefas comuns do dia a dia; como: lavar roupas e passá-las. Segundo o estudo da Agência Brasil, publicado em março de 2020: “Mais de 58% da população brasileira não consegue ou sente dificuldade em se organizar, e acabam postergando suas tarefas” (Agência Brasil, 2020). Para garantir um melhor aproveitamento, torna-se fundamental que existam plataformas que permitam ao usuário gerenciar seus horários disponíveis, visualizar suas tarefas pendentes, ter histórico de agendamentos e lembretes que dão condições e uma visão ampla de organização, que irá se adequar a rotina do usuário.
 
 ## Problema
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
