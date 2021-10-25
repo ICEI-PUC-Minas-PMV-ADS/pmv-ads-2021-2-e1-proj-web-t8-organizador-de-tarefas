@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <header>
+        <a class="header-menu" href="#" onclick="openMenu()"><img src="img/turn-right.png"></a>
+    </header>
+    <nav id="menu-lateral">
+        <ul>
+            <li class="header-list"><a href="#" onclick="closeMenu()"><img src="img/turn-right.png"><img id="more" src="img/more (3).png"></a></li>
+            <li><a class="menu" href=""><img src="img/sign-in (1).png"> Home</a></li>
+            <li><a class="menu" href="calendario.html"><img src="img/calendar.png"> Calendário</a></li>
+            <li><a class="menu" href="quadroproximastarefas.html"><img src="img/write.png"> Tarefas</a></li>
+            <li><a class="menu" href=""><img src="img/volume-up.png"> Lembretes</a></li>
+            <li><a class="menu" href=""><img src="img/pie-chart.png"> Desempenho</a></li>
+            <li><a class="menu" href=""><img src="img/sound-frequency.png"> Status de Tarefas</a></li>
+            <li><a class="menu" href=""><img src="img/share.png"> Compartilhar Tarefas</a></li>
+        </ul>
+    </nav>
+    <main id="main">
+        <section>
+            <div id="quadro-principal">
+                <div class="quadro-principal-titulo">
+                    <div class="quadro-principal-icones">
+                        <button type="button" class="quadro-principal-icone" data-bs-toggle="modal"
+                            data-bs-target="#myModal"></button>
+                    </div>
+                    <div class="quadro-principal-progresso">
+                        <h3 class="quadro-principal-title">Progresso</h3>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="quadro-principal-conteudo">
+                    <div class="quadro-principal-esquerda">
+                        <div class="quadro-principal-esquerda-item">
+                            <div class="quadro-principal-ponto quadro-principal-urgencia"></div>
+                            <div class="quadro-principal-descricao"> Terminar o Trabalho de lógica</div>
+                        </div>
+
+                        <div class="quadro-principal-esquerda-item">
+                            <div class="quadro-principal-ponto quadro-principal-concluido"></div>
+                            <div class="quadro-principal-descricao"> Terminar o Trabalho de programação</div>
+                        </div>
+
+                        <div class="quadro-principal-esquerda-item">
+                            <div class="quadro-principal-ponto quadro-principal-andamento"></div>
+                            <div class="quadro-principal-descricao"> Terminar a prova</div>
+                        </div>
+
+                        <div class="quadro-principal-esquerda-item">
+                            <div class="quadro-principal-ponto quadro-principal-atraso"></div>
+                            <div class="quadro-principal-descricao"> Estudar Javascript</div>
+                        </div>
+
+                        <div class="quadro-principal-esquerda-item">
+                            <div class="quadro-principal-ponto quadro-principal-atraso"></div>
+                            <div class="quadro-principal-descricao"> Terminar o Trabalho</div>
+                        </div>
+
+                        <div class="quadro-principal-esquerda-item ">
+                            <div class="quadro-principal-ponto quadro-principal-desabilitado"></div>
+                            <div class="quadro-principal-descricao"> &ThinSpace;</div>
+                        </div>
+
+                        <div class="quadro-principal-esquerda-item">
+                            <div class="quadro-principal-ponto quadro-principal-desabilitado"></div>
+                            <div class="quadro-principal-descricao"> &ThinSpace;</div>
+                        </div>
+
+                        <div class="quadro-principal-esquerda-item">
+                            <div class="quadro-principal-ponto quadro-principal-desabilitado"></div>
+                            <div class="quadro-principal-descricao"> &ThinSpace;</div>
+                        </div>
+                    </div>
+                    <div class="quadro-principal-direita">
+                        <div class="quadro-principal-esquerda-item">
+                            <div class="quadro-principal-ponto quadro-principal-concluido"></div>
+                            <div class="quadro-principal-descricao"> Terminar o Trabalho de lógica</div>
+                        </div>
+
+                        <div class="quadro-principal-esquerda-item">
+                            <div class="quadro-principal-ponto quadro-principal-concluido"></div>
+                            <div class="quadro-principal-descricao"> Terminar o Trabalho de lógica</div>
+                        </div>
+
+                        <div class="quadro-principal-esquerda-item">
+                            <div class="quadro-principal-ponto quadro-principal-concluido"></div>
+                            <div class="quadro-principal-descricao"> Terminar o Trabalho de lógica</div>
+                        </div>
+
+                        <div class="quadro-principal-esquerda-item ">
+                            <div class="quadro-principal-ponto quadro-principal-desabilitado"></div>
+                            <div class="quadro-principal-descricao"> &ThinSpace;</div>
+                        </div>
+
+                        <div class="quadro-principal-esquerda-item ">
+                            <div class="quadro-principal-ponto quadro-principal-desabilitado"></div>
+                            <div class="quadro-principal-descricao"> &ThinSpace;</div>
+                        </div>
+
+                        <div class="quadro-principal-esquerda-item ">
+                            <div class="quadro-principal-ponto quadro-principal-desabilitado"></div>
+                            <div class="quadro-principal-descricao"> &ThinSpace;</div>
+                        </div>
+
+                        <div class="quadro-principal-esquerda-item ">
+                            <div class="quadro-principal-ponto quadro-principal-desabilitado"></div>
+                            <div class="quadro-principal-descricao"> &ThinSpace;</div>
+                        </div>
+
+                        <div class="quadro-principal-esquerda-item ">
+                            <div class="quadro-principal-ponto quadro-principal-desabilitado"></div>
+                            <div class="quadro-principal-descricao"> &ThinSpace;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="legenda">
+                <div class="linha"></div>
+                <div class="legenda-item">
+                    <div class="legenda-ponto quadro-principal-urgencia"></div>
+                    <div class="legenda-item-descricao"> Urgência</div>
+                </div>
+
+                <div class="legenda-item">
+                    <div class="legenda-ponto quadro-principal-atraso"></div>
+                    <div class="legenda-item-descricao"> Em Atraso</div>
+                </div>
+
+                <div class="legenda-item">
+                    <div class="legenda-ponto quadro-principal-andamento"></div>
+                    <div class="legenda-item-descricao"> Em Andamento</div>
+                </div>
+
+                <div class="legenda-item">
+                    <div class="legenda-ponto quadro-principal-concluido"></div>
+                    <div class="legenda-item-descricao"> Concluído</div>
+                </div>
+            </div>
+        </section>
+        <aside>
+            <header>
+
+            </header>
+
+            <div class="calendario">
+                                     <div>
+                        <div class="month-title">
+                            <img src="./img/left-arrow.png" alt="" class="icon-calendario" srcset="">
+                            <h5> Outubro 2021 </h5>
+                            <img src="./img/left-arrow.png" alt="" class="icon-calendario rotate-img" srcset="">
+                        </div>
+
+                    </div>
+                <table border="0">
+                    <tr>
+                        <td class="day-name">Seg</td>
+                        <td class="day-name">Ter</td>
+                        <td class="day-name">Qua</td>
+                        <td class="day-name">Qui</th>
+                        <td class="day-name">Sex</td>
+                        <td class="day-name">Sab</td>
+                        <td class="day-name">Dom</td>
+                    </tr>
+                    <tr>
+                        <td class="day"> </td>
+                        <td class="day"> </td>
+                        <td class="day"> </td>
+                        <td class="day"> </td>
+                        <td class="day"> </td>
+                        <td class="day">1</td>
+                        <td class="day">2</td>
+                    </tr>
+
+                    <tr>
+                        <td class="day">3</td>
+                        <td class="day">4</td>
+                        <td class="day">5</td>
+                        <td class="day">6</td>
+                        <td class="day">7</td>
+                        <td class="day">8</td>
+                        <td class="day">9</td>
+                    </tr>
+                    <tr>
+                        <td class="day">10</td>
+                        <td class="day">11</td>
+                        <td class="day">12</td>
+                        <td class="day">13</td>
+                        <td class="day">14</td>
+                        <td class="day">15</td>
+                        <td class="day">16</td>
+                    </tr>
+                    <tr>
+                        <td class="day">17</td>
+                        <td class="day">18</td>
+                        <td class="day">19</td>
+                        <td class="day">20</td>
+                        <td class="day">21</td>
+                        <td class="day">22</td>
+                        <td class="day" id="day-active">23</td>
+                    </tr>
+                    <tr>
+                        <td class="day">24</td>
+                        <td class="day">25</td>
+                        <td class="day">26</td>
+                        <td class="day">27</td>
+                        <td class="day">28</td>
+                        <td class="day">29</td>
+                        <td class="day">30</td>
+                    </tr>
+                    <tr>
+                        <td class="day">31</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="proximas-tarefas">
+                <h3 >Próximas Tarefas</h3>
+                <div id="centralizar">
+
+                    <div class="item-proxima-tarefa">
+                        <div id="item1"></div>
+                        <div class="item-proxima-tarefa-descricao"></div>
+                    </div>
+
+                    <div class="item-proxima-tarefa">
+                        <div id="item2"></div>
+                        <div class="item-proxima-tarefa-descricao"></div>
+                    </div>
+
+                    <div class="item-proxima-tarefa">
+                        <div id="item3"></div>
+                        <div class="item-proxima-tarefa-descricao"></div>
+                    </div>
+
+                    <div class="item-proxima-tarefa">
+                        <div id="item4"></div>
+                        <div class="item-proxima-tarefa-descricao"></div>
+                    </div>                 
+                </div>
+            </div>
+        </aside>
+    </main>
+
+
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Editar Tarefas</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <label for="descricao">Descrição Tarefas</label>
+                            <input type="text" class="form-control" id="descricao" aria-describedby="basic-addon3">
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 20px;" class="row justify-content-center">
+                        <div class="col-md-10">
+                            <label for="descricao">Status</label>
+                            <div class="input-group">
+                                <select class="form-control" id="inputGroupSelect04">
+                                    <option selected> Escolha</option>
+                                    <option value="1">Urgência</option>
+                                    <option value="2">Em atraso</option>
+                                    <option value="3">Em andamento</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Salvar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/quadro-principal.js"></script>
+
+</html>
