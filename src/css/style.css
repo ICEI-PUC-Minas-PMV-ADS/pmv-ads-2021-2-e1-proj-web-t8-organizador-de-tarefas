@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+html {
+    height: 100%;
+}
+
+
+body {
+    background-color: #06b39f !important;
+    height: 100%;
+     width: 100%;
+}
+
+
+main {
+    display: flex;
+    min-height: 100%;
+    width: 100%;
+}
+
+
+header{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(6, 179,159, 1);
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+nav{
+    background-color: rgba(35, 116, 137,1);
+    width: 0px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: width 0.3s;
+    overflow: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
+.header-list{
+    height: 27px;
+    padding: 13px 10px 0px;
+}
+
+
+.header-menu{
+    height: 30px;
+    padding-left: 10px;
+}
+
+.menu{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 30px 10px;
+}
+
+#more{
+    float: right;
+    padding: 5px 5px 0px 0px;
+}
+
+a:hover{
+    background-color: rgb(176, 224, 230);
+    color: white;
+}
+
+#main{
+    transition: margin-left 0.3s;
+    padding: 10px;
+}
+
+section {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+aside {
+    width: 25%;
+   /* background-color: red;*/
+}
+
+
+/**
+----------------------------------
+
+        EStilo Quadro Principal
+
+----------------------------------
+**/
+
+
+
+#quadro-principal {
+    background-color: #d1d1d1;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    max-width: 650px;
+    margin-top: 120px;
+}
+
+
+.quadro-principal-titulo {
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.quadro-principal-conteudo {
+
+    display: flex;
+    padding-bottom: 28px;
+}
+
+.quadro-principal-esquerda {
+
+    margin-left: 25px;
+    width: 45%;
+    border-right: #424242 2px solid;
+    padding-top: 10px;
+    padding-right: 12px;
+}
+
+.quadro-principal-icones {
+    width: 30%;
+}
+
+.quadro-principal-progresso {
+    width: 70%;
+}
+
+.progress {
+    height: 5px !important;
+}
+
+.quadro-principal-direita {
+    padding: 10px;
+    /*background-color: blueviolet;*/
+    width: 55%;
+}
+
+.quadro-principal-title {
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.quadro-principal-icone {
+    background-image: url(../img/editar-preto.png);
+    background-color: #d1d1d1;
+    
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border: 5px solid #d1d1d1;
+    transition: 0.3s;
+    border-radius: 7px;
+}
+
+.quadro-principal-icone:hover {
+    background-color: #0d6efd;
+    background-image: url(../img/editar-branco.png);
+    border: 5px solid #0d6efd;
+    border-radius: 7px;
+}
+
+.quadro-principal-ponto {
+    background-color: black;
+    height: 7px;
+    width: 7px;
+    border-radius: 5px;
+}
+
+.quadro-principal-urgencia {
+    background-color: #fbc02d;
+}
+
+.quadro-principal-atraso {
+    background-color: #d84315;
+}
+
+.quadro-principal-andamento {
+    background-color: #0d6efd;
+}
+
+.quadro-principal-concluido {
+    background-color: #1b5e20;
+}
+
+.quadro-principal-desabilitado {
+      background-color: #616161;
+}
+
+.quadro-principal-esquerda-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.quadro-principal-descricao {
+    margin-left: 8px;
+}
+
+
+/**
+----------------------------------
+
+        Fim Quadro Principal
+
+----------------------------------
+**/
+
+
+/**
+----------------------------------
+
+        Legenda
+
+----------------------------------
+**/
+
+.linha {
+    height: 3px;
+    background-color: #424242;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.legenda {
+    margin: 0 auto;
+    width: 500px;
+}
+
+.legenda-ponto {
+    height: 17px;
+    width: 17px;
+    border-radius: 9px;
+}
+
+.legenda-item {
+    display: flex;
+    margin: 25px 0;
+    align-items: center;
+}
+
+.legenda-item-descricao {
+    margin-left: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #424242;
+}
+
+/**
+----------------------------------
+
+      Fim Legenda
+        
+----------------------------------
+**/
+
+/**
+----------------------------------
+
+    calendário
+        
+----------------------------------
+**/
+
+.calendario {
+    background-color: #d1d1d1;
+    padding: 15px 10px 5px 10px;
+    border-radius: 10px;
+    width: 350px;
+    margin: 0 auto;
+}
+
+table {
+    border-spacing: 6px 5px;
+    border-collapse: separate !important;
+    margin: 0 auto;
+}
+
+td {
+    margin-left: 5px;
+    /*padding: 0 5px;*/
+
+}
+
+caption {
+    font-size: 15px;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid darkgray;
+}
+
+.day-name {
+    font-size: 13px;
+
+}
+
+.icon-calendario {
+    width: auto;
+    height: 10px;
+}
+
+.month-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.rotate-img {
+    transform: rotate(180deg);
+}
+
+h5 {
+    font-weight: 400;
+    margin: 0;
+    font-size: 15px;
+}
+
+.day {
+    background-color: #f8f8f8;
+    padding: 2px 8px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#day-active {
+    background-color: #06b39f;
+    color: white;
+}
+
+/**
+----------------------------------
+
+      Fim Calendairio
+        
+----------------------------------
+**/
+
+/**
+----------------------------------
+
+    Próximas Tarefas
+        
+----------------------------------
+**/
+
+.proximas-tarefas {
+    margin-top: 40px;
+}
+
+
+
+#item1 {
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+    margin: 30px;
+    border-radius: 50%;
+}
+
+#item2 {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    margin: 30px;
+    border-radius: 50%;
+}
+
+#item3 {
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+    margin: 30px;
+    border-radius: 50%;
+}
+
+#item4 {
+    width: 15px;
+    height: 15px;
+    background-color: yellow;
+    margin: 30px;
+    border-radius: 50%;
+}
+
+h3{
+    font-size: 28px !important;
+    text-align: center;
+
+    color: #424242;
+    
+}
+
+
+#centralizar {
+    background-color: rgba(39, 94, 129, 1);
+    width: 320px;
+    padding: 60px 0;
+    padding-block-start: 1px;
+    margin: 0 auto;
+    border-radius: 40px;
+    margin-top: 40px;
+    
+}
+
+.item-proxima-tarefa {
+    display: flex;
+    align-items: flex-end;
+}
+
+.item-proxima-tarefa-descricao {
+    background-color: white;
+    width: 60%;
+    height: 1px;
+}
