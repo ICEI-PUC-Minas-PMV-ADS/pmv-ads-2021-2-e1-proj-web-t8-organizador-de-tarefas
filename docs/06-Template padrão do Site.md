@@ -1,6 +1,6 @@
 # Template padrão do site
 
-O padrão de layout a ser utilizado pelo site tem correspondência ao projeto de Interface elaborado anteriormente, conforme Figura X.
+O padrão de layout a ser utilizado pelo site tem correspondência ao projeto de Interface elaborado anteriormente, conforme Figura.
 ![image](https://user-images.githubusercontent.com/75712250/138779988-b0ba3390-289a-406f-bec8-dcecec31fb71.png)
 
 ![image](https://user-images.githubusercontent.com/75712250/138780040-ec256950-9e5b-41f8-89c6-db4ed799fefe.png)
