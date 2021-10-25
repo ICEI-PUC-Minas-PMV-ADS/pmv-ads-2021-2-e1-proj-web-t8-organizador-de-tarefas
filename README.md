@@ -30,7 +30,6 @@ qualidade e otimização em seus projetos pessoais e profissionais.
 * Eduarda Mereciano
 * Isabella Fernanda 
 * Leticia Amorim
-* Lucas Silveira 
 * Gustavo Ribeiro
 
 ## Orientador
