@@ -1,6 +1,6 @@
 # Organizador De tarefas
 
-Curso: Analise e Desinvolvimento de Software
+Curso: Análise e Desinvolvimento de Software
 
 Disciplina: Web Front End 
 
@@ -28,11 +28,11 @@ qualidade e otimização em seus projetos pessoais e profissionais.
 * Kaique Rocha 
 * Eduarda Mereciano
 * Isabella Fernanda 
-* Leticia Amorim
+* Letícia Amorim
 
 ## Orientador
 
-* WILL RICARDO DOS SANTOS MACHADO
+* Ilo Amy Saldanha Rivero
 
 ## Instruções de utilização
 
