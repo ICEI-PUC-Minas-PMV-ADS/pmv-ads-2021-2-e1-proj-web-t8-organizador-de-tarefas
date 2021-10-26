@@ -26,11 +26,9 @@ qualidade e otimização em seus projetos pessoais e profissionais.
 ## Integrantes
 
 * Kaique Rocha 
-* Arthur Duarte 
 * Eduarda Mereciano
 * Isabella Fernanda 
 * Leticia Amorim
-* Gustavo Ribeiro
 
 ## Orientador
 
