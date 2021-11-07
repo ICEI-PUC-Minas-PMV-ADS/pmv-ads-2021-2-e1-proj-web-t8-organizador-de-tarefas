@@ -6,7 +6,7 @@
 -2.	Descompacte o arquivo em uma pasta específica;
 
 -3.	Abra um navegador de Internet e informe a seguinte URL:
-https://gerenciadordetarefas.bss.design/register.html
+https://gerenciadordetarefas.bss.design/login.html
 
 ## Histórico de versões
 
