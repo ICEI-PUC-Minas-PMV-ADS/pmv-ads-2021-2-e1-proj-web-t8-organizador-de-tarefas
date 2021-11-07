@@ -5,10 +5,8 @@
 
 -2.	Descompacte o arquivo em uma pasta específica;
 
--3.	Abra o Visual Studio Code e execute o Live Server;
-
--4.	Abra um navegador de Internet e informe a seguinte URL:
-http://localhost:5500/index.html
+-3.	Abra um navegador de Internet e informe a seguinte URL:
+https://gerenciadordetarefas.bss.design/register.html
 
 ## Histórico de versões
 
