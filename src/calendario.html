@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Dashboard - Brand</title>
+    <title> Gerenciador de Tarefas</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
@@ -19,6 +20,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="app.css">
+
 </head>
 
 <body id="page-top">
@@ -162,143 +165,50 @@
 <div class="container py-5">
 
   <!-- For Demo Purpose -->
-  <header class="text-center text-white mb-5">
-    <h1 class="display-4"></h1>
-  </header>
-
 
   <!-- Calendar -->
-  <div class="calendar shadow bg-white p-5">
-    <div class="d-flex align-items-center"><i class="fa fa-calendar fa-3x mr-3"></i>
-      <h2 class="month font-weight-bold mb-0 text-uppercase">Novembro 2021</h2>
-    </div>
-    <p class="font-italic text-muted mb-5"> Eventos hoje.</p>
-    <ol class="day-names list-unstyled">
-      <li class="font-weight-bold text-uppercase">S</li>
-      <li class="font-weight-bold text-uppercase">T</li>
-      <li class="font-weight-bold text-uppercase">Q</li>
-      <li class="font-weight-bold text-uppercase">Q</li>
-      <li class="font-weight-bold text-uppercase">S</li>
-      <li class="font-weight-bold text-uppercase">S</li>
-      <li class="font-weight-bold text-uppercase">D</li>
-    </ol>
+  <body class="light">
 
-    <ol class="days list-unstyled">
-      <li>
-        <div class="date">1</div>
-        <div class="event bg-success">Entrega da 3 Etapa</div>
-      </li>
-      <li>
-        <div class="date">2</div>
-      </li>
-      <li>
-        <div class="date">3</div>
-      </li>
-      <li>
-        <div class="date">4</div>
-      </li>
-      <li>
-        <div class="date">5</div>
-      </li>
-      <li>
-        <div class="date">6</div>
-      </li>
-      <li>
-        <div class="date">7</div>
-      </li>
-      <li>
-        <div class="date">8</div>
-      </li>
-      <li>
-        <div class="date">9</div>
-      </li>
-      <li>
-        <div class="date">10</div>
-      </li>
-      <li>
-        <div class="date">11</div>
-      </li>
-      <li>
-        <div class="date">12</div>
-      </li>
-      <li>
-        <div class="date">13</div>
-        <div class="event all-day begin span-2 bg-warning">Revisar Microfundamentos de Web front End</div>
-      </li>
-      <li>
-        <div class="date">14</div>
-      </li>
-      <li>
-        <div class="date">15</div>
-        <div class="event all-day end bg-success">Atividade de Lógica</div>
-      </li>
-      <li>
-        <div class="date">16</div>
-      </li>
-      <li>
-        <div class="date">17</div>
-      </li>
-      <li>
-        <div class="date">18</div>
-      </li>
-      <li>
-        <div class="date">19</div>
-      </li>
-      <li>
-        <div class="date">20</div>
-      </li>
-      <li>
-        <div class="date">21</div>
-        <div class="event bg-primary">Entrega da 4 Etapa web Frot End</div>
-        <div class="event bg-success">Prova de Logica </div>
-      </li>
-      <li>
-        <div class="date">22</div>
-        <div class="event bg-info"> Terminar Micrifundamento de organização de computadores</div>
-      </li>
-      <li>
-        <div class="date">23</div>
-      </li>
-      <li>
-        <div class="date">24</div>
-      </li>
-      <li>
-        <div class="date">25</div>
-      </li>
-      <li>
-        <div class="date">26</div>
-      </li>
-      <li>
-        <div class="date">27</div>
-      </li>
-      <li>
-        <div class="date">28</div>
-      </li>
-      <li>
-        <div class="date">29</div>
-      </li>
-      <li>
-        <div class="date">30</div>
-      </li>
-      <li>
-        <div class="date">31</div>
-      </li>
-      <li class="outside">
-        <div class="date">1</div>
-      </li>
-      <li class="outside">
-        <div class="date">2</div>
-      </li>
-      <li class="outside">
-        <div class="date">3</div>
-      </li>
-      <li class="outside">
-        <div class="date">4</div>
-      </li>
-    </ol>
-  </div>
+    <div class="calendar">
+        <div class="calendar-header">
+
+            <span class="month-picker" id="month-picker">Fevereiro</span>
+            <div class="year-picker">
+                <span class="year-change" id="prev-year">
+                  <pre>◀️</pre>
+                </span>
+                <span id="year">2021</span>
+                <span class="year-change" id="next-year">
+                  <pre>▶️</pre>
+                </span>
+            </div>
+        </div>
+        <div class="calendar-body">
+            <div class="calendar-week-day">
+                <div>Segunda</div>
+                <div>Terça</div>
+                <div>Quarta</div>
+                <div>Quinta</div>
+                <div>Sexta</div>
+                <div>Sábado</div>
+                <div>Domingo</div>
+            </div>
+            <div class="calendar-days"></div>
+        </div>
+        <div class="calendar-footer">
+            <div class="toggle">
+                <span>Modo Dark</span>
+                <div class="dark-mode-switch">
+                    <div class="dark-mode-switch-ident"></div>
+                </div>
+            </div>
+        </div>
+        <div class="month-list"></div>
+    </div>
+
+
 </div>
-</div>
+
                     </div>
                     <div class="row">
                         <div class="col">
@@ -391,6 +301,10 @@
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="app.js"></script>
+
+
 </body>
 
 </html>
+
