@@ -305,6 +305,11 @@
                             <div class="card shadow">
                                 <div class="card-header py-3">
                                     <img onclick="showModal()" src="assets/img/more (4).png">
+                                    <img id="share" onclick="compartilharToDoList()" src="assets/img/share (1).png">
+                                    <!-- <div class="container-bar">
+                                        <div class="progress-bar"></div>
+                                    </div>
+                                    <button>Upload</button> -->
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
@@ -313,43 +318,13 @@
                                                 <tr>
                                                     <th>Tarefas</th>
                                                     <th>Status</th>
+                                                    <th>Data</th>
                                                 </tr>
                                             </thead>
                                             <tbody id="table-task">
                                             </tbody>
                                             </table>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-6 align-self-center">
-                                                <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Showing 1 to 10 of 27</p>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
-                                                    <ul class="pagination">
-                                                        <li class="page-item disabled">
-                                                            <a class="page-link" href="#" aria-label="Previous">
-                                                                <span aria-hidden="true">«</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="page-item active"><a class="page-link" href="#">
-                                                            1
-                                                        </a>
-                                                    </li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#">2</a>
-                                                    </li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#">3</a>
-                                                    </li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Next">
-                                                            <span aria-hidden="true">»</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </nav>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -362,22 +337,29 @@
                         </div>
                     </footer>
                 </div>
-                  <div id="modal-task" class="modal-container" style="width: 100vw; height: 100vh; background-color: rgba(0,0,0,.5); position: fixed; z-index: 2000; display: flex;align-items: center; justify-content: center;">
+                <!-- Modal de adicionar tarefas -->
+                <div id="modal-task" class="modal-container" style="width: 100vw; height: 100vh; background-color: rgba(0,0,0,.5); position: fixed; z-index: 2000; display: flex;align-items: center; justify-content: center;">
                     <div class="modal-edit" style="background-color: white; width: 40%; height: 40%; padding: 10px;border-radius:4px">
                         <label for="">Tarefa</label>
                         <input id="newTask" type="text" class="form-control form-control-sm" style="width: 70%;" aria-controls="dataTable" placeholder="Insira uma tarefa...">
-                        <label class="form-label">Status&nbsp;
+                        <label class="form-label">Status
                             <select id="status-task" class="d-inline-block form-select form-select-sm">
                                 <option value="Pendente">Pendente</option>
-                                <option value="Em progresso">Em progresso</option>
-                                <option value="Concluída">Concluída</option>
-                            </select>&nbsp;
+                                <option value="Em Progresso">Em Progresso</option>
+                                <option value="Concluído">Concluído</option>
+                            </select>
                         </label>
+                        <label>Data</label>
+                        <input id="data-task" class="form-control form-control-sm"  style="width: 35%; margin-bottom: 15px;" type="date">
                         <button onclick="fechaModal()" class="btn btn-primary btn-sm" type="submit">Cancelar</button>
                         <button id="addTask" class="btn btn-primary btn-sm" type="submit">Adicionar</button>
                     </div>
                 </div>
-                <a class="border rounded d-inline scroll-to-top" href="#page-top">
+                <!-- Fim modal de adicionar tarefas -->
+                     <div id="div-compartilhar" style="display: none;background-color: white; width: 40%; height: 40%; padding: 10px;border-radius:4px; top:-100">
+                        <input id="compartilhar" type="text" class="form-control form-control-sm" style="width: 70%;" aria-controls="dataTable">
+                    </div>
+                <a class="border rounded d-inline scroll-to-top" href="#page-top"> -->
                     <i class="fas fa-angle-up"></i></a></div>
                     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
@@ -399,5 +381,26 @@
         }
         .mostrar .modal{
             animation: modal-task .3s;
+        }
+
+        .container-bar{
+            height: 20px;
+            background-color: white;
+            position: relative;
+            width: 70%;
+            border:black;
+        }
+
+        .container-bar .progress-bar{
+            position: absolute;
+            height: 100%;
+            background-color: blueviolet;
+            animation:  progress-animation 5s forwards;
+        }
+
+        @keyframes progress-animation {
+            0% {width: 0%;}
+            100% {width: 100%;}
+
         }
     </style>
