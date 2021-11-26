@@ -77,13 +77,15 @@ function deleteTask(index){
     showLista()
 }
 
-function compartilharToDoList(){
-    document.querySelector('#share').onclick = function(){
-        document.getElementById('div-compartilhar').style.display ='block';
-        let link = window.location.href
+document.querySelector('#share').onclick = function(){
+    document.getElementById('div-compartilhar').style.display ='block';
+}
 
-        document.getElementById('compartilhar').value = link;
-        document.getElementById('compartilhar').select();
-        document.execCommand('copy')
-    }
+document.querySelector('#copy').onclick = function(){
+    let link = window.location.href
+    document.getElementById('compartilhar').value = link;
+    document.getElementById('compartilhar').select();
+    document.execCommand('copy')
+    alert('Link copiado com sucesso!')
+    document.getElementById('div-compartilhar').style.display ='none';
 }
