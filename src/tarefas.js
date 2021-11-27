@@ -43,10 +43,7 @@ document.querySelector('#addTask').onclick = function(){
                     contTaskDone = contTaskDone + 1
                 }
             }
-            console.log("CONTTASKDONE")
-            console.log(contTaskDone)
             porcentagem = Math.ceil((100*contTaskDone) / (contList+1))
-            console.log("PORCENTAGEEEEM",porcentagem)
             progressBar.setPercent(porcentagem);
             localStorage.setItem('porcentagem', JSON.stringify(porcentagem))
 
