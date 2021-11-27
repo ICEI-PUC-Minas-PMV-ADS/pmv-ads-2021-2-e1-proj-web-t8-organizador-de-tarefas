@@ -16,6 +16,7 @@ Fonte: Elaborada pelos autores.
 > - [JSON Data Set Sample](https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html)
 > - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
 > - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)O template criado está disponível neste site e é composto pelos seguintes layouts:
+O template criado está disponível neste site e é composto pelos seguintes layouts:
 ●	Tela de login
 ●	Tela Home-Page
 
