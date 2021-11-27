@@ -7,6 +7,7 @@ function fechaModal(){
 }
 
 showLista()
+var porcentagem;
 
 document.querySelector('#addTask').onclick = function(){
    
@@ -14,10 +15,8 @@ document.querySelector('#addTask').onclick = function(){
         alert("Adicione uma tarefa!")
     }else{
         let statusTask = document.getElementById('status-task').value
-        console.log(statusTask)
 
         let dataTask = document.getElementById('data-task').value
-        console.log(dataTask)
         if(document.querySelector('#newTask').value != 0){
             let localItens = JSON.parse(localStorage.getItem('localItem'))
             if(localItens === null){
@@ -32,12 +31,37 @@ document.querySelector('#addTask').onclick = function(){
                 status: statusTask,
                 data: dataTask
             }
+            let contList = tasks.length
+            let contTaskDone = 0
+            console.log("CONTLIST")
+            console.log(contList)
+           
             tasks.push(infoTask)
             localStorage.setItem('localItem', JSON.stringify(tasks))
+            for(let i=0; i<=contList; i++){
+                if(tasks[i].status == 'Concluído'){
+                    contTaskDone = contTaskDone + 1
+                }
+            }
+            console.log("CONTTASKDONE")
+            console.log(contTaskDone)
+            porcentagem = Math.ceil((100*contTaskDone) / (contList+1))
+            console.log("PORCENTAGEEEEM",porcentagem)
+            progressBar.setPercent(porcentagem);
+            localStorage.setItem('porcentagem', JSON.stringify(porcentagem))
+
         }   
         showLista()
         fechaModal()
     }
+}
+var progressBar;
+window.onload = function(){
+    let pctgem = JSON.parse(localStorage.getItem('porcentagem'))
+    console.log("DENTROOOO")
+    console.log(porcentagem)
+    progressBar = new ProgressBar("my-progressbar", {'width':'30%', 'height':'15px'});
+    progressBar.setPercent(pctgem);
 }
 
 function showLista(){
@@ -71,7 +95,6 @@ function showLista(){
 }
 
 function deleteTask(index){
-    let localItens = JSON.parse(localStorage.getItem('localItem'))
     tasks.splice(index,1)
     localStorage.setItem('localItem', JSON.stringify(tasks))
     showLista()
@@ -79,6 +102,9 @@ function deleteTask(index){
 
 document.querySelector('#share').onclick = function(){
     document.getElementById('div-compartilhar').style.display ='block';
+    let link = window.location.href
+    document.getElementById('compartilhar').value = link;
+    
 }
 
 document.querySelector('#copy').onclick = function(){
