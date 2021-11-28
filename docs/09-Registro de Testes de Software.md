@@ -5,9 +5,10 @@ O caso de teste obteve êxito, foi possível realizar o cadastro do usuário, re
 Caso de Teste 02: Utilização do calendário. 
 O caso de teste obteve êxito, o usuário conseguiu navegar entre os meses e anos do calendário, e foi possível alterar de modo claro para noturno e vice-versa.  
 Calendário no modo claro:
-![image](https://user-images.githubusercontent.com/75712250/143790903-866ec959-7d3e-49d3-bbcd-8fa39d2d4e94.png)
-Modo Escuro: 
 ![image](https://user-images.githubusercontent.com/75712250/143790940-1f113577-3876-4d81-8bb7-95f4263f4fcd.png)
+
+Modo Escuro: 
+![image](https://user-images.githubusercontent.com/75712250/143790903-866ec959-7d3e-49d3-bbcd-8fa39d2d4e94.png)
 
 Calendário em outro mês/ano:
 ![image](https://user-images.githubusercontent.com/75712250/143790951-7f3cdb8c-8470-41d9-b18e-7290928927f2.png)
