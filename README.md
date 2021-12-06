@@ -36,7 +36,7 @@ qualidade e otimização em seus projetos pessoais e profissionais.
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+O site em HTML/CSS/JS é um projeto web front end para gerenciar estudos. Pode ser acessado pelo mobile ou computador através do link: https://Gerenciador-de-tarefas.kaiqueroc.repl.co
 
 # Documentação
 
