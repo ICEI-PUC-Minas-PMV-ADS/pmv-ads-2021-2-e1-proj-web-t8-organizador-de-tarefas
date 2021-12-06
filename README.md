@@ -36,7 +36,7 @@ qualidade e otimização em seus projetos pessoais e profissionais.
 
 ## Instruções de utilização
 
-O site em HTML/CSS/JS é um projeto web front end para gerenciar estudos. Pode ser acessado pelo mobile ou computador através do link: https://Gerenciador-de-tarefas.kaiqueroc.repl.co
+O site em HTML/CSS/JS é um projeto web front end para gerenciar seus estudos. Pode ser acessado pelo mobile ( celular) ou desktop (computador) através do link: https://Gerenciador-de-tarefas.kaiqueroc.repl.co
 
 # Documentação
 
