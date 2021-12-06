@@ -61,5 +61,4 @@ O site em HTML/CSS/JS é um projeto web front end para gerenciar estudos. Pode s
 # Apresentação
 
 [<img src="https://img.youtube.com/vi/qvw8a2JrxKE/maxresdefault.jpg" width="50%">](https://youtu.be/qvw8a2JrxKE)
-[Just Time](https://user-images.githubusercontent.com/75712250/144933812-9b8fc8d2-09ee-4e67-8a90-6206b4d0a6c4.png)
 
